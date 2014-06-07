@@ -113,7 +113,7 @@ public class Database
 		logger.debug("Database Class = {}", aClass.getCanonicalName());
 		logger.debug("Database Datastore Collection = {}", store);
 		
-		try
+		try 
 		{
 			mongodb    = new MongoClient( server, port );
 			database   = mongodb.getDB( "morphiaexample" );
