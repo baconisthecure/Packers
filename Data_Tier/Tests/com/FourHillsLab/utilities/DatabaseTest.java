@@ -82,9 +82,9 @@ public class DatabaseTest extends Database {
 						
 			
 			
-			Database db = Database.getDatabase();
+			Database db = Database.getDatabase(); 
 					
-			db.connect(validDatabaseServer, validPort,User.class,validStore,validStore);
+			//db.connect(validDatabaseServer, validPort,User.class,validStore,validStore);
 			
 			assertNotNull(db.getDatastore());
 			
