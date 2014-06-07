@@ -107,9 +107,11 @@ public class DatabaseTest extends Database {
 	{
 		try
 		{
-		Database db = new Database(validDatabaseServer, validPort,User.class,validStore,validStore);
+			Database db = Database.getDatabase(); 
+			db.connect(validDatabaseServer, validPort, packageName, validStore, "UserManagementTest");
+	
 		
-		assertNotNull(db.getDatastore());
+			assertNotNull(db.getDatastore());
 		}
 		catch(Exception e)
 		{
